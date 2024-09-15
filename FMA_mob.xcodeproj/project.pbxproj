@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2204614F2C97186E007B6735 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2204614E2C97186E007B6735 /* UIExtension.swift */; };
+		220461512C9728F0007B6735 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220461502C9728F0007B6735 /* LoginView.swift */; };
 		221E6A7B2C9709B300407D26 /* FMA_mobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6A7A2C9709B300407D26 /* FMA_mobApp.swift */; };
-		221E6A7D2C9709B300407D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6A7C2C9709B300407D26 /* ContentView.swift */; };
 		221E6A7F2C9709B600407D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221E6A7E2C9709B600407D26 /* Assets.xcassets */; };
 		221E6A822C9709B600407D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221E6A812C9709B600407D26 /* Preview Assets.xcassets */; };
 		221E6A8C2C9709B600407D26 /* FMA_mobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6A8B2C9709B600407D26 /* FMA_mobTests.swift */; };
 		221E6A962C9709B600407D26 /* FMA_mobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6A952C9709B600407D26 /* FMA_mobUITests.swift */; };
 		221E6A982C9709B600407D26 /* FMA_mobUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6A972C9709B600407D26 /* FMA_mobUITestsLaunchTests.swift */; };
+		221E6AA82C970A1700407D26 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221E6AA52C970A1600407D26 /* Gilroy-Regular.ttf */; };
+		221E6AA92C970A1700407D26 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221E6AA62C970A1600407D26 /* Gilroy-SemiBold.ttf */; };
+		221E6AAA2C970A1700407D26 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221E6AA72C970A1600407D26 /* Gilroy-Bold.ttf */; };
+		221E6AB32C970BA300407D26 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6AB22C970BA300407D26 /* WelcomeView.swift */; };
+		221E6AB52C970BE600407D26 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221E6AB42C970BE500407D26 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2204614E2C97186E007B6735 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		220461502C9728F0007B6735 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		221E6A772C9709B300407D26 /* FMA_mob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMA_mob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		221E6A7A2C9709B300407D26 /* FMA_mobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMA_mobApp.swift; sourceTree = "<group>"; };
-		221E6A7C2C9709B300407D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		221E6A7E2C9709B600407D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		221E6A812C9709B600407D26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		221E6A872C9709B600407D26 /* FMA_mobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMA_mobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,12 @@
 		221E6A912C9709B600407D26 /* FMA_mobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMA_mobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221E6A952C9709B600407D26 /* FMA_mobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMA_mobUITests.swift; sourceTree = "<group>"; };
 		221E6A972C9709B600407D26 /* FMA_mobUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMA_mobUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		221E6AA52C970A1600407D26 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		221E6AA62C970A1600407D26 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		221E6AA72C970A1600407D26 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		221E6AAB2C970A7500407D26 /* FMA-mob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FMA-mob-Info.plist"; sourceTree = SOURCE_ROOT; };
+		221E6AB22C970BA300407D26 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		221E6AB42C970BE500407D26 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +107,16 @@
 		221E6A792C9709B300407D26 /* FMA_mob */ = {
 			isa = PBXGroup;
 			children = (
+				221E6AAF2C970B3500407D26 /* UICommon */,
+				221E6AAE2C970B2200407D26 /* ViewModel */,
+				221E6AAD2C970B1400407D26 /* Model */,
+				221E6AAC2C970AFB00407D26 /* View */,
+				221E6AAB2C970A7500407D26 /* FMA-mob-Info.plist */,
+				221E6AA42C970A1600407D26 /* Font */,
 				221E6A7A2C9709B300407D26 /* FMA_mobApp.swift */,
-				221E6A7C2C9709B300407D26 /* ContentView.swift */,
 				221E6A7E2C9709B600407D26 /* Assets.xcassets */,
 				221E6A802C9709B600407D26 /* Preview Content */,
+				221E6AB42C970BE500407D26 /* Launch Screen.storyboard */,
 			);
 			path = FMA_mob;
 			sourceTree = "<group>";
@@ -125,6 +144,55 @@
 				221E6A972C9709B600407D26 /* FMA_mobUITestsLaunchTests.swift */,
 			);
 			path = FMA_mobUITests;
+			sourceTree = "<group>";
+		};
+		221E6AA42C970A1600407D26 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				221E6AA52C970A1600407D26 /* Gilroy-Regular.ttf */,
+				221E6AA62C970A1600407D26 /* Gilroy-SemiBold.ttf */,
+				221E6AA72C970A1600407D26 /* Gilroy-Bold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		221E6AAC2C970AFB00407D26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				221E6AB02C970B7000407D26 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		221E6AAD2C970B1400407D26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		221E6AAE2C970B2200407D26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		221E6AAF2C970B3500407D26 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				2204614E2C97186E007B6735 /* UIExtension.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		221E6AB02C970B7000407D26 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				221E6AB22C970BA300407D26 /* WelcomeView.swift */,
+				220461502C9728F0007B6735 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +299,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221E6AB52C970BE600407D26 /* Launch Screen.storyboard in Resources */,
 				221E6A822C9709B600407D26 /* Preview Assets.xcassets in Resources */,
+				221E6AA92C970A1700407D26 /* Gilroy-SemiBold.ttf in Resources */,
+				221E6AAA2C970A1700407D26 /* Gilroy-Bold.ttf in Resources */,
+				221E6AA82C970A1700407D26 /* Gilroy-Regular.ttf in Resources */,
 				221E6A7F2C9709B600407D26 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221E6A7D2C9709B300407D26 /* ContentView.swift in Sources */,
 				221E6A7B2C9709B300407D26 /* FMA_mobApp.swift in Sources */,
+				2204614F2C97186E007B6735 /* UIExtension.swift in Sources */,
+				220461512C9728F0007B6735 /* LoginView.swift in Sources */,
+				221E6AB32C970BA300407D26 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +494,14 @@
 				DEVELOPMENT_TEAM = 29727T86D3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FMA-mob-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +509,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "meDilnazNauryzbayeva.FMA-mob";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,11 +529,14 @@
 				DEVELOPMENT_TEAM = 29727T86D3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FMA-mob-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +544,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "meDilnazNauryzbayeva.FMA-mob";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

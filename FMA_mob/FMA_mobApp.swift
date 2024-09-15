@@ -11,7 +11,11 @@ import SwiftUI
 struct FMA_mobApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            NavigationView {
+                WelcomeView()
+            }
+            
         }
     }
 }
