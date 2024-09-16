@@ -23,16 +23,16 @@ struct WelcomeView: View {
                             .resizable()
                             .scaledToFill()
                             .aspectRatio(contentMode: .fit)
-                            .offset(y: -70)
+                            .position(x: 196, y: 260)
                         
                         Text("Natural and \nFresh Products")
-                            .offset(y: -50)
+                            .offset(y: -90)
                             .offset(x: -30)
                             .font(.customfont(.bold, fontSize: 40))
                             .foregroundColor(.black)
                         
                         Text("Straight from the Farm \nto Your Table")
-                            .offset(y: -40)
+                            .offset(y: -80)
                             .offset(x: -30)
                             .font(.customfont(.semibold, fontSize: 25))
                             .foregroundColor(.gray.opacity(0.7))
@@ -42,16 +42,16 @@ struct WelcomeView: View {
                             .resizable()
                             .scaledToFill()
                             .aspectRatio(contentMode: .fit)
-                            .offset(y: -70)
+                            .position(x: 196, y: 260)
                         
                         Text("Fast and Careful \nDelivery")
-                            .offset(y: -50)
+                            .offset(y: -90)
                             .offset(x: -10)
                             .font(.customfont(.bold, fontSize: 40))
                             .foregroundColor(.black)
                         
                         Text("Quality You can Trust, \nRight to Your Door")
-                            .offset(y: -40)
+                            .offset(y: -80)
                             .offset(x: -40)
                             .font(.customfont(.semibold, fontSize: 25))
                             .foregroundColor(.gray.opacity(0.7))
@@ -61,16 +61,16 @@ struct WelcomeView: View {
                             .resizable()
                             .scaledToFill()
                             .aspectRatio(contentMode: .fit)
-                            .offset(y: -75)
+                            .position(x: 196.5, y: 255)
                         
                         Text("Great Value, \nNo Compromise")
-                            .offset(y: -50)
+                            .offset(y: -90)
                             .offset(x: -20)
                             .font(.customfont(.bold, fontSize: 40))
                             .foregroundColor(.black)
                         
                         Text("Affordable Groceries, \nHassle-Free Experience")
-                            .offset(y: -40)
+                            .offset(y: -80)
                             .offset(x: -30)
                             .font(.customfont(.semibold, fontSize: 25))
                             .foregroundColor(.gray.opacity(0.7))
@@ -90,22 +90,26 @@ struct WelcomeView: View {
                                 .background(Color.black)
                                 .clipShape(Circle())
                         }
-                        .offset(y: 0)
+                        .offset(y: -50)
                         .offset(x: 135)
                         
                     } else {
                         // "Get Started" button to navigate to the Login Page
                         NavigationLink(destination: LoginView()) {
                             Text("Get Started")
-                                .font(.headline)
+                                .font(.customfont(.semibold, fontSize: 18))
                                 .foregroundColor(.white)
-                                .padding()
-                                .background(Color.black)
-                                .cornerRadius(30)
-                                .frame(width: 200, height: 50)
+                                .padding(.horizontal, 30)
+                                .multilineTextAlignment(.center)
+                                
+                            
                         }
-                        .offset(y: 0)
-                        .offset(x: 90)
+                        .frame( minWidth: 0, maxWidth: 300, minHeight: 60, maxHeight: 60)
+                        .background(Color.primaryApp)
+                        .cornerRadius(20)
+                        .offset(y: -50)
+                    
+                        
                     }
                 }
             }
