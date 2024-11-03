@@ -1,13 +1,13 @@
 //
-//  ForgotPasswordView.swift
+//  ForgotPasswordSetView.swift
 //  FMA_mob
 //
-//  Created by Dilnaz Nauryzbayeva on 16.09.2024.
+//  Created by Dilnaz Nauryzbayeva on 03.11.2024.
 //
 
 import SwiftUI
 
-struct ForgotPasswordView: View {
+struct ForgotPasswordSetView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @StateObject var forgotVM = ForgotPasswordViewModel.shared;
     
@@ -21,34 +21,37 @@ struct ForgotPasswordView: View {
             
             
             VStack{
-
+                
                 Image("LogoLogo")
                                .resizable()
                                .scaledToFit()
                                .frame(width: 40)
                                .scaleEffect(1.6)
-                Spacer()
+                           Spacer()
                 
-                Text("Forgot Password")
+                
+                Text("Set New Password")
                     .font(.customfont(.semibold, fontSize: 26))
                     .foregroundColor(.primaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 4)
                 
-                Text("Enter your emails")
+                Text("Enter your new password")
                     .font(.customfont(.semibold, fontSize: 16))
                     .foregroundColor(.secondaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, .screenWidth * 0.1)
                 
-                LineTextField( title: "Email", placholder: "Enter your email address", txt: $forgotVM.txtEmail, keyboardType: .emailAddress)
-                    .padding(.bottom, .screenWidth * 0.07)
                 
+                LineSecureField( title: "New Password", placholder: "Enter your new password", txt: $forgotVM.txtNewPassword, isShowPassword: $forgotVM.isNewPassword)
+                    .padding(.bottom, .screenWidth * 0.02)
                 
+                LineSecureField( title: "Confirm Password", placholder: "Enter your confirm password", txt: $forgotVM.txtConfirmPassword, isShowPassword: $forgotVM.isConfirmPassword)
+                    .padding(.bottom, .screenWidth * 0.04)
                 
                 
                 RoundButton(title: "Submit") {
-                    forgotVM.serviceCallRequest()
+                    forgotVM.serviceCallSetPassword()
                 }
                 .padding(.bottom, .screenWidth * 0.05)
                 
@@ -91,12 +94,7 @@ struct ForgotPasswordView: View {
                 
             Alert(title: Text(Globs.AppName), message: Text( forgotVM.errorMessage ), dismissButton: .default(Text("Ok")))
         }
-        .background( NavigationLink(destination: OTPView(), isActive: $forgotVM.showVerify,  label: {
-            EmptyView()
-        }) )
-        .background( NavigationLink(destination: ForgotPasswordSetView(), isActive: $forgotVM.showSetPassword,  label: {
-            EmptyView()
-        }) )
+        
         .background(Color.white)
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
@@ -106,13 +104,9 @@ struct ForgotPasswordView: View {
     }
 }
 
-struct ForgotPasswordView_Previews: PreviewProvider {
+struct ForgotPasswordSetView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        NavigationView {
-            ForgotPasswordView()
-        }
-
-        
+        ForgotPasswordSetView()
     }
 }
+

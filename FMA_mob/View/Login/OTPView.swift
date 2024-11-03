@@ -1,13 +1,13 @@
 //
-//  ForgotPasswordView.swift
+//  OTPView.swift
 //  FMA_mob
 //
-//  Created by Dilnaz Nauryzbayeva on 16.09.2024.
+//  Created by Dilnaz Nauryzbayeva on 03.11.2024.
 //
 
 import SwiftUI
 
-struct ForgotPasswordView: View {
+struct OTPView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @StateObject var forgotVM = ForgotPasswordViewModel.shared;
     
@@ -21,38 +21,43 @@ struct ForgotPasswordView: View {
             
             
             VStack{
-
-                Image("LogoLogo")
-                               .resizable()
-                               .scaledToFit()
-                               .frame(width: 40)
-                               .scaleEffect(1.6)
-                Spacer()
                 
-                Text("Forgot Password")
+                Text("Enter your 4-digit code")
                     .font(.customfont(.semibold, fontSize: 26))
                     .foregroundColor(.primaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom, 4)
+                    .padding(.bottom, 8)
                 
-                Text("Enter your emails")
-                    .font(.customfont(.semibold, fontSize: 16))
-                    .foregroundColor(.secondaryText)
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom, .screenWidth * 0.1)
-                
-                LineTextField( title: "Email", placholder: "Enter your email address", txt: $forgotVM.txtEmail, keyboardType: .emailAddress)
+                LineTextField( title: "Code", placholder: "- - - -", txt: $forgotVM.txtResetCode, keyboardType: .phonePad)
                     .padding(.bottom, .screenWidth * 0.07)
                 
                 
-                
-                
-                RoundButton(title: "Submit") {
-                    forgotVM.serviceCallRequest()
+                HStack {
+                    Button {
+                        forgotVM.serviceCallRequest()
+                    } label: {
+                        Text("Resend Code")
+                            .font(.customfont(.bold, fontSize: 18))
+                            .foregroundColor(.primaryApp)
+                            
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        forgotVM.serviceCallVerify()
+                    } label: {
+                        Image("next")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .padding(15)
+                    }
+                    .foregroundColor(.white)
+                    .background(Color.primaryApp)
+                    .cornerRadius(30)
+                    
                 }
-                .padding(.bottom, .screenWidth * 0.05)
-                
-                
                 
                 
                 Spacer()
@@ -91,12 +96,7 @@ struct ForgotPasswordView: View {
                 
             Alert(title: Text(Globs.AppName), message: Text( forgotVM.errorMessage ), dismissButton: .default(Text("Ok")))
         }
-        .background( NavigationLink(destination: OTPView(), isActive: $forgotVM.showVerify,  label: {
-            EmptyView()
-        }) )
-        .background( NavigationLink(destination: ForgotPasswordSetView(), isActive: $forgotVM.showSetPassword,  label: {
-            EmptyView()
-        }) )
+       
         .background(Color.white)
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
@@ -106,13 +106,8 @@ struct ForgotPasswordView: View {
     }
 }
 
-struct ForgotPasswordView_Previews: PreviewProvider {
+struct OTPView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        NavigationView {
-            ForgotPasswordView()
-        }
-
-        
+        OTPView()
     }
 }

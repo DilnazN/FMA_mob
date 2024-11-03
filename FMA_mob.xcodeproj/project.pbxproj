@@ -20,6 +20,9 @@
 		221E6AAA2C970A1700407D26 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221E6AA72C970A1600407D26 /* Gilroy-Bold.ttf */; };
 		221E6AB32C970BA300407D26 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E6AB22C970BA300407D26 /* WelcomeView.swift */; };
 		221E6AB52C970BE600407D26 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221E6AB42C970BE500407D26 /* Launch Screen.storyboard */; };
+		2221CB8F2CD7ACEC00CDE256 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221CB8E2CD7ACEC00CDE256 /* ForgotPasswordViewModel.swift */; };
+		2221CB912CD7AD3200CDE256 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221CB902CD7AD3200CDE256 /* OTPView.swift */; };
+		2221CB932CD7AD5C00CDE256 /* ForgotPasswordSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221CB922CD7AD5C00CDE256 /* ForgotPasswordSetView.swift */; };
 		227CE6FF2C988F220042D38B /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227CE6FE2C988F220042D38B /* LineTextField.swift */; };
 		227CE7012C988FB60042D38B /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227CE7002C988FB60042D38B /* ForgotPasswordView.swift */; };
 		227CE7052C9890340042D38B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227CE7042C9890340042D38B /* RoundButton.swift */; };
@@ -67,6 +70,9 @@
 		221E6AAB2C970A7500407D26 /* FMA-mob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FMA-mob-Info.plist"; sourceTree = SOURCE_ROOT; };
 		221E6AB22C970BA300407D26 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		221E6AB42C970BE500407D26 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2221CB8E2CD7ACEC00CDE256 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		2221CB902CD7AD3200CDE256 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		2221CB922CD7AD5C00CDE256 /* ForgotPasswordSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSetView.swift; sourceTree = "<group>"; };
 		227CE6FE2C988F220042D38B /* LineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		227CE7002C988FB60042D38B /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		227CE7042C9890340042D38B /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				227CE70F2C9891010042D38B /* MainViewModel.swift */,
+				2221CB8E2CD7ACEC00CDE256 /* ForgotPasswordViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -221,6 +228,8 @@
 				220461502C9728F0007B6735 /* LoginView.swift */,
 				227CE7002C988FB60042D38B /* ForgotPasswordView.swift */,
 				227CE7112C9892500042D38B /* SignUpView.swift */,
+				2221CB902CD7AD3200CDE256 /* OTPView.swift */,
+				2221CB922CD7AD5C00CDE256 /* ForgotPasswordSetView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -370,9 +379,12 @@
 				227CE7142C9893DF0042D38B /* OTPTextField.swift in Sources */,
 				227CE7052C9890340042D38B /* RoundButton.swift in Sources */,
 				221E6A7B2C9709B300407D26 /* FMA_mobApp.swift in Sources */,
+				2221CB932CD7AD5C00CDE256 /* ForgotPasswordSetView.swift in Sources */,
 				227CE70B2C9890840042D38B /* Globs.swift in Sources */,
 				227CE7072C9890650042D38B /* ServiceCall.swift in Sources */,
 				2204614F2C97186E007B6735 /* UIExtension.swift in Sources */,
+				2221CB912CD7AD3200CDE256 /* OTPView.swift in Sources */,
+				2221CB8F2CD7ACEC00CDE256 /* ForgotPasswordViewModel.swift in Sources */,
 				227CE70E2C9890CB0042D38B /* UIKitExtension.swift in Sources */,
 				220461512C9728F0007B6735 /* LoginView.swift in Sources */,
 				227CE7162C9893F90042D38B /* UserModel.swift in Sources */,
